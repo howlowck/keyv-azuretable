@@ -1,4 +1,4 @@
-[<img width="100" align="right" src="docs/media/keyv_logo.svg" alt="keyv">](https://github.com/jaredwray/keyv-memcache)
+[<img width="100" align="right" src="docs/media/keyv_logo.svg" alt="keyv">](https://github.com/howlowck/keyv-azuretable)
 
 # Keyv-AzureTable
 
