@@ -42,3 +42,5 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm run test
+        env:
+          AZURE_TABLE_CONNECTION_STRING: ${{secrets.AZURE_TABLE_CONNECTION_STRING}}
