@@ -1,6 +1,6 @@
 [<img width="100" align="right" src="docs/media/keyv_logo.svg" alt="keyv">](https://github.com/howlowck/keyv-azuretable)
 
-# Keyv-AzureTable [![Test](https://github.com/howlowck/keyv-azuretable/actions/workflows/test.yml/badge.svg)](https://github.com/howlowck/keyv-azuretable/actions/workflows/test.yml)
+# Keyv-AzureTable [![Test](https://github.com/howlowck/keyv-azuretable/actions/workflows/test.yml/badge.svg)](https://github.com/howlowck/keyv-azuretable/actions/workflows/test.yml) [![npm](https://img.shields.io/npm/v/keyv-azuretable)](https://www.npmjs.com/package/keyv-azuretable)
 
 An Azure Table adapter for [Keyv](https://github.com/jaredwray/keyv)
 
