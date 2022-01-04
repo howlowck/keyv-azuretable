@@ -13,7 +13,7 @@ An Azure Table adapter for [Keyv](https://github.com/jaredwray/keyv)
 
 ```js
 const Keyv = require('keyv')
-const KeyvAzureTable = require('keyv-azuretable')
+const { AzureTableAdapter } = require('keyv-azuretable')
 
 const azTableOption = {
   connectionString: '', // connection string for your storage account
@@ -22,13 +22,13 @@ const azTableOption = {
   clientOptions: {}, // optional (azure-table TableClient-specific options. See note below.)
 }
 
-const noNsAzTable = new KeyvAzureTable()
-await noNsAzTable.createTable() // if the table is not created, you can use `createTable` to create the table
+const noNsAzTable = new AzureTableAdapter()
+await noNsAzTable.createTable() // if the table is not created, you can use `createTable` to create the table. If the table already exists, this method will not throw/fail.
 const config = noNsAzTable.getKeyvConfig()
 // config = {store: azTableAdatpr, namespace: `keyvns-${nanoid()}`}
 const keyv = new Keyv(config)
 
-const usersAzTable = new KeyvAzureTable({
+const usersAzTable = new AzureTableAdapter({
   ...azTableOption,
   namespace: 'users',
 })
