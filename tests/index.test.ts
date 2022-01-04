@@ -1,11 +1,11 @@
-import AzureTable from '../src/index'
+import { AzureTableAdapter } from '../src/index'
 import Keyv from 'keyv'
 
 const { AZURE_TABLE_CONNECTION_STRING } = process.env
 const localTestConnectionString = AZURE_TABLE_CONNECTION_STRING as string
 
 test('can store and retrieve a string', async () => {
-  const azureTableAdapter = new AzureTable({
+  const azureTableAdapter = new AzureTableAdapter({
     connectionString: localTestConnectionString,
     tableName: 'test',
     clientOptions: { allowInsecureConnection: true },
@@ -20,7 +20,7 @@ test('can store and retrieve a string', async () => {
 })
 
 test('can store and retrieve an object', async () => {
-  const azureTableAdapter = new AzureTable({
+  const azureTableAdapter = new AzureTableAdapter({
     connectionString: localTestConnectionString,
     tableName: 'test',
     clientOptions: { allowInsecureConnection: true },
@@ -41,7 +41,7 @@ test('can store and retrieve an object', async () => {
 })
 
 test('(namespaced) can store and retrieve an object', async () => {
-  const azureTableAdapter = new AzureTable({
+  const azureTableAdapter = new AzureTableAdapter({
     connectionString: localTestConnectionString,
     tableName: 'test',
     clientOptions: { allowInsecureConnection: true },
@@ -63,7 +63,7 @@ test('(namespaced) can store and retrieve an object', async () => {
 })
 
 test('(namespaced) can store and delete an object', async () => {
-  const azureTableAdapter = new AzureTable({
+  const azureTableAdapter = new AzureTableAdapter({
     connectionString: localTestConnectionString,
     tableName: 'test',
     clientOptions: { allowInsecureConnection: true },
@@ -88,7 +88,7 @@ test('(namespaced) can store and delete an object', async () => {
 })
 
 test('can clear the store', async () => {
-  const azureTableAdapter = new AzureTable({
+  const azureTableAdapter = new AzureTableAdapter({
     connectionString: localTestConnectionString,
     tableName: 'test',
     clientOptions: { allowInsecureConnection: true },
@@ -134,7 +134,7 @@ test('can clear the store', async () => {
 })
 
 test('can clear empty store', async () => {
-  const azureTableAdapter = new AzureTable({
+  const azureTableAdapter = new AzureTableAdapter({
     connectionString: localTestConnectionString,
     tableName: 'test',
     clientOptions: { allowInsecureConnection: true },
@@ -150,7 +150,7 @@ test('can clear empty store', async () => {
 })
 
 test('can set ttl expiry', async () => {
-  const azureTableAdapter = new AzureTable({
+  const azureTableAdapter = new AzureTableAdapter({
     connectionString: localTestConnectionString,
     tableName: 'test',
     clientOptions: { allowInsecureConnection: true },

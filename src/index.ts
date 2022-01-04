@@ -36,11 +36,11 @@ const resourceNotFound = (error: ClientError) => {
 }
 
 type KeyvConfig = {
-  store: AzureTable
+  store: AzureTableAdapter
   namespace: string
 }
 
-class AzureTable extends EventEmitter {
+class AzureTableAdapter extends EventEmitter {
   private client: TableClient
   private namespace: string
 
@@ -140,4 +140,4 @@ class AzureTable extends EventEmitter {
   }
 }
 
-export default AzureTable
+export { AzureTableAdapter }
