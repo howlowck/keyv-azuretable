@@ -2,7 +2,7 @@
 
 # Keyv-AzureTable [![Test](https://github.com/howlowck/keyv-azuretable/actions/workflows/test.yml/badge.svg)](https://github.com/howlowck/keyv-azuretable/actions/workflows/test.yml) [![npm](https://img.shields.io/npm/v/keyv-azuretable)](https://www.npmjs.com/package/keyv-azuretable)
 
-An Azure Table adapter for [Keyv](https://github.com/jaredwray/keyv)
+An [Azure Table](https://docs.microsoft.com/en-us/azure/cosmos-db/table/table-support) adapter for [Keyv](https://github.com/jaredwray/keyv)
 
 ## Install
 
