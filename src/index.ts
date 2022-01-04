@@ -140,4 +140,4 @@ class AzureTable extends EventEmitter {
   }
 }
 
-export { AzureTable }
+export default AzureTable

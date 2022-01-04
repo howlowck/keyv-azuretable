@@ -1,4 +1,4 @@
-import { AzureTable } from '../src/index'
+import AzureTable from '../src/index'
 import Keyv from 'keyv'
 
 const { AZURE_TABLE_CONNECTION_STRING } = process.env
